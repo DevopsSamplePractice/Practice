@@ -1,8 +1,14 @@
 #!/bin/bash
-#
+###############
 #Author:Harsh Kushwaha
 #Description: This script is for listing the users having access to any github repo of any organization
 #Date:12/08/2025
+# Version: v1.01
+# Prerequisites: Before executing the script execute the following commands:
+# export username="Your_username"
+# export token="Your_github_classic_token"
+# In case of issues contact: "https://www.linkedin.com/in/harsh-kushwaha-613689219/"
+################
 
 #GitHUB API url
 API_URL="https://api.github.com"
