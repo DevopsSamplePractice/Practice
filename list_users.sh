@@ -14,6 +14,8 @@
 # In case of issues contact: "https://www.linkedin.com/in/harsh-kushwaha-613689219/"
 ################
 
+read_full_script()
+
 #GitHUB API url
 API_URL="https://api.github.com"
 
@@ -52,7 +54,14 @@ collaborators="$(github_get_api "$endpoint" | jq -r '.[] | select(.permissions.p
 		echo "$collaborators"
 	fi
 }
-
+#
+function read_full_script{
+	expected_args=2
+	if [$# -ne $expected_args]; then
+		echo "Bro..!! you haven't read the script executing command given above, it's ok!! Please pass the expected cmd args"
+		echo "Args: Repo_onwer Repo_name"
+	}
+#
 # Main script to show list of users with read access
 #
 echo "Listing users with read access to ${Repo_owner}/${Repo_name}..."
