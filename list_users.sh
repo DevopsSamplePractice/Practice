@@ -4,9 +4,13 @@
 #Description: This script is for listing the users having access to any github repo of any organization
 #Date:12/08/2025
 # Version: v1.01
+# 
 # Prerequisites: Before executing the script execute the following commands:
 # export username="Your_username"
 # export token="Your_github_classic_token"
+#
+#Command to run the script:"./list_users.sh <Repo_owner> <Repo_name>"
+#
 # In case of issues contact: "https://www.linkedin.com/in/harsh-kushwaha-613689219/"
 ################
 
