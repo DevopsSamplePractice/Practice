@@ -3,7 +3,7 @@
 #Author:Harsh Kushwaha
 #Description: This script is for listing the users having access to any github repo of any organization
 #Date:12/08/2025
-# Version: v1.01
+# Version: v1.04
 # 
 # Prerequisites: Before executing the script execute the following commands:
 # export username="Your_username"
