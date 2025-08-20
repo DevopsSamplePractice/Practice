@@ -16,10 +16,9 @@ This repository contains:
 
 ## 📂 Project Structure
 
-ResourceTracker_AWS/
-│
-├── aws_resource_tracker.sh # Main script
-├── aws_resource_tracker.log # Log file (proof of execution it is optional keeping it, you can create your own log file)
+ResourceTracker_CronJob/
+- aws_resource_tracker.sh # Main script
+- aws_resource_tracker.log # Log file (proof of execution it is optional keeping it, you can create your own log file)
 
 
 ---
