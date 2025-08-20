@@ -10,7 +10,7 @@ A lightweight automation tool to track your **AWS resources** (EC2 Instances, S3
 
 This repository contains:  
 - `aws_resource_tracker.sh` → Shell script to fetch AWS resources  
-- `aws_resource_tracker.log` → Sample execution logs  
+- `aws_resource_tracker.log` → Sample execution logs 
 
 ---
 
@@ -19,27 +19,9 @@ This repository contains:
 ResourceTracker_AWS/
 │
 ├── aws_resource_tracker.sh # Main script
-├── aws_resource_tracker.log # Log file (proof of execution not required to keep it, you can create your own log file)
+├── aws_resource_tracker.log # Log file (proof of execution it is optional keeping it, you can create your own log file)
 
 
----
-
-## ⚙️ Prerequisites
-
-Before using this project, ensure you have:
-
-- ✅ Linux/Unix environment  
-- ✅ [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) installed  
-- ✅ AWS credentials configured (`aws configure`)  
-- ✅ Permissions to list EC2, S3, and Lambda resources  
-
----
-
-## 🚀 Getting Started
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/<your-username>/
 ---
 
 ## ⚙️ Prerequisites
@@ -62,21 +44,21 @@ Before using this project, ensure you have:
 
 ```chmod +x aws_resource_tracker.sh```
 
-3️⃣ Run Manually (Optional)
+### 3️⃣ Run Manually (Optional)
 
-./aws_resource_tracker.sh
+```./aws_resource_tracker.sh```
 
 
-🕒 Automating with Cron
-1️⃣ Open Crontab
+### 🕒 Automating with Cron
+### 1️⃣ Open Crontab
 
 ```crontab -e```
 
-2️⃣ Add an Entry
+### 2️⃣ Add an Entry
 
 Run the script every hour and log results:
 
-0 * * * * /bin/bash /absolute/path/ResourceTracker_CronJob/aws_resource_tracker.sh >> /absolute/path/ResourceTracker_CronJob/aws_resource_tracker.log 2>&1
+```0 * * * * /bin/bash /absolute/path/ResourceTracker_CronJob/aws_resource_tracker.sh >> /absolute/path/ResourceTracker_CronJob/aws_resource_tracker.log 2>&1```
 
 👉 Replace /absolute/path/ResourceTracker_CronJob with your actual path.
 
